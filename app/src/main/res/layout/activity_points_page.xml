@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/points_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        app:navigationIcon="@mipmap/goback"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学习积分"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/userPointsDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="积分明细"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <!--<include layout="@layout/points_page_item_sum"/>-->
+    <ListView
+        android:id="@+id/contentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        />
+</LinearLayout>

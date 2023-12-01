@@ -1,0 +1,37 @@
+[
+  {
+    "name": "登录",
+    "description": "1分/每日首次登录",
+    "todayPoints": 1,
+    "pointsLimit": 1,
+    "goAction": "def"
+  },
+  {
+    "name": "我要选读文章",
+    "description": "1分/每有效阅读/播报一篇，上限6分\n1分/有效阅读或播报文章累计1分钟，上限6分",
+    "todayPoints": 11,
+    "pointsLimit": 12,
+    "goAction": "res_article"
+  },
+  {
+    "name": "视听学习",
+    "description": "1分/每有效收听/观看一个",
+    "todayPoints": 4,
+    "pointsLimit": 6,
+    "goAction": "res_tv"
+  },
+  {
+    "name": "每日答题",
+    "description": "每组答题每答对1道积1分",
+    "todayPoints": 1,
+    "pointsLimit": 6,
+    "goAction": "new_dailyQ"
+  },
+  {
+    "name": "每周答题",
+    "description": "每组答题每答对1道积1分，同组答题不重复积分",
+    "todayPoints": 6,
+    "pointsLimit": 6,
+    "goAction": "new_weeklyQ"
+  }
+]

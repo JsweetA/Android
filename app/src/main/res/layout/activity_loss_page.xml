@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".LossPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/pagetop_border"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/goback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="账号挂失"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="27dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/locking" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="发现账号被盗或手机丢失，
+            您可以紧急挂失您的账号"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="防止他人窃取您的信息或冒用您的身份
+            可申请账号挂失"
+            android:textColor="#636262"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/submit_loss"
+            style="@style/button_submit"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="30dp"
+            android:text="确定挂失" />
+
+    </LinearLayout>
+
+</LinearLayout>

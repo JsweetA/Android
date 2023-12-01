@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <!--        <item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="RedTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#F70606</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="avatar">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/avatar_border</item>
+    </style>
+
+    <style name="login_lable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40px</item>
+        <item name="android:textColor">#F22B2A2A</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="login_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">50px</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="button_submit">
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">46px</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/loginbutton_border</item>
+    </style>
+
+    <style name="button_register">
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">46px</item>
+        <item name="android:textColor">#E41F1F</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/regisbutton_border</item>
+    </style>
+
+    <style name="button_submitToApp">
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">46px</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/toappbutton_border</item>
+    </style>
+
+    <style name="tv_play_common_margin">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="shadow">
+        <item name="android:background">@drawable/layer</item>
+    </style>
+</resources>

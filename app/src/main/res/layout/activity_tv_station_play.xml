@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.androidtermwork.view.JzvdPlayer
+        android:id="@+id/play_playerStandard"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/videoInfoRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomDivider"
+        android:layout_below="@id/play_playerStandard"
+        app:srlEnableRefresh="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/play_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/play_comment"
+            android:layout_below="@id/play_playerStandard"
+            android:background="#ffffff"
+            android:overScrollMode="never"
+            />
+
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    <View
+        android:id="@+id/bottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_above="@id/play_comment"
+        />
+    <RelativeLayout
+        android:id="@+id/play_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:id="@+id/tv_publishComment"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toStartOf="@id/comment_accesses"
+            android:background="@drawable/border_comment"
+            android:hint="欢迎发表你的观点"
+            android:padding="5dp"
+            android:layout_marginTop="9dp"/>
+
+        <LinearLayout
+            android:id="@+id/comment_accesses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/icComment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_comments" />
+
+                <TextView
+                    android:id="@+id/tvCommentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icComment"
+                    android:background="#ffffff"
+                    android:text="999+"
+                    android:textColor="#FF003B"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="9sp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_collect_star" />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_share" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

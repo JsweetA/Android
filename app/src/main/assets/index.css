@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(250, 251, 253);
+  padding: 0 10px;
+}
+
+.top {
+  width: 90%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(213, 215, 216);
+  position: fixed;
+  top: -2px;
+  background-color: rgb(250, 251, 253);
+}
+
+.top img {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.top>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.top .topIcon {
+  background-color: rgb(228, 36, 23);
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+#time {
+  font-size: 9px;
+  color: rgb(116, 116, 117);
+  margin-top: 5px;
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#resource {
+  font-size: 8px;
+  color: rgb(116, 116, 117);
+  margin-top: 5px;
+}
+
+#title {
+  margin-top: 15px;
+}
+
+#title2 {
+  margin-top: 10px;
+}
+
+#article {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-indent: 2em;
+}
+
+#editor {
+  margin-top: 10px;
+  font-size: 13px;
+  float: right;
+}
+
+.bottom {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(213, 215, 216);
+  position: fixed;
+  bottom: -2px;
+  background-color: rgb(250, 251, 253);
+}
+
+#input {
+  padding: 2px 8px;
+  font-size: 10px;
+  background-color: rgb(212, 211, 211);
+  width: 200px;
+  height: 20px;
+  border: rgb(212, 211, 211);
+  border-radius: 2px;
+}
+
+.bottom img {
+  height: 20px;
+  width: 20px;
+}
+
+.player {
+  position: fixed;
+  bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid rgb(212, 211, 211);
+  background-color: rgb(241, 243, 244);
+  border-radius: 5px;
+}
+
+.player img {
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+#zhankai {
+  position: fixed;
+  bottom: 131px;
+  left: 0px;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+#audio {
+  width: 230px;
+  height: 40px;
+}

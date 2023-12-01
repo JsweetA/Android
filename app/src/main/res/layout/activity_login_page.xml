@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/avatar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/login_lable"
+            android:text="手机号码" />
+
+        <EditText
+            android:id="@+id/userPhone"
+            style="@style/login_input"
+            android:layout_below="@id/text1"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:layout_marginTop="3dp"
+            android:hint="请输入手机号码" />
+
+        <ImageView
+            android:id="@+id/del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/text1"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/clear"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/login_lable"
+            android:layout_below="@id/userPhone"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/userPassword"
+            style="@style/login_input"
+            android:layout_below="@id/text2"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:hint="请输入密码" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/text2"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/button_submit"
+            android:layout_below="@id/userPassword"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/button_register"
+            android:layout_below="@id/submit"
+            android:text="新用户注册" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="212dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/retrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="找回密码"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:background="#E89E9B9B"/>
+
+        <TextView
+            android:id="@+id/loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:text="账号挂失"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

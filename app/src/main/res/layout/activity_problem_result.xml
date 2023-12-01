@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".activity_problem_3">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp">
+        <ImageView android:id="@+id/fanh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/shan"
+            android:layout_marginTop="14dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        style="@style/shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/xian1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#B89F81" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xian1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="本次答对题目数"
+                android:textColor="#F9E9DA"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_alignLeft="@+id/title"
+                android:text="3"
+                android:textColor="#FDFFFE"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xian1"
+                android:layout_alignLeft="@+id/title"
+                android:layout_marginTop="35dp"
+                android:text="正确率：100%" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/one"
+                android:layout_alignLeft="@+id/title"
+                android:layout_marginTop="15dp"
+                android:text="错题数：0" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/one"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                android:text="用时：00:00:32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/two"
+                android:layout_alignBottom="@id/three"
+                android:text="积分：+3" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/three"
+                android:layout_alignLeft="@+id/three"
+                android:layout_marginTop="35dp"
+                android:background="#F1F1F1"
+                android:text="返回"
+                android:textColor="#7E7575" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/btn1"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="35dp"
+                android:background="#B89F81"
+                android:text="确定"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/btn2" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

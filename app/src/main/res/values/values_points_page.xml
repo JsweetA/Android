@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dan_name">段位：%s</string>
+    <string name="today_points">今日已累积 %d积分</string>
+    <string name="today_points_details">已获%d分，每日上限%d分</string>
+    <string name="background_todo">#fdf8ee</string>
+    <string name="text_todo">#ab9c8b</string>
+    <string name="background_done">#f2f4f5</string>
+    <string name="text_done">#676e70</string>
+    <string-array name="dan_name_array">
+        <item>积分不足，暂无段位</item>
+        <item>一心一意</item>
+        <item>再接再厉</item>
+        <item>三省吾身</item>
+        <item>名扬四海</item>
+        <item>学富五车</item>
+        <item>六韬三略</item>
+        <item>七步才华</item>
+        <item>才高八斗</item>
+        <item>九天揽月</item>
+        <item>十年磨剑</item>
+    </string-array>
+    <string name="dan_star_prefix">ic_bright_star</string>
+</resources>

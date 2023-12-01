@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidtermwork">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconcirred"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="n">
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MinePage"
+            android:exported="false" />
+        <activity
+            android:name=".activity_problem_result"
+            android:exported="false" />
+        <activity
+            android:name=".activity_problem_1"
+            android:exported="false" />
+        <activity
+            android:name=".activity_problem_tip"
+            android:exported="false" />
+        <activity
+            android:name=".activity_problem_2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_problem_3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/RedTheme" />
+        <activity android:name=".ResetPasswordPage" />
+        <activity android:name=".RegisterThirdPage" />
+        <activity android:name=".RegisterSecondPage" />
+        <activity android:name=".RegisterFirstPage" />
+        <activity android:name=".RetrievePasswordPage" />
+        <activity android:name=".LossPage" />
+        <activity android:name=".webView"/>
+        <activity android:name=".WelcomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginPage" />
+        <activity android:name=".PointsPage" />
+        <activity android:name=".TvStationPlayPage"/>
+    </application>
+
+</manifest>

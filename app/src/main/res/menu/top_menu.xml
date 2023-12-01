@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menuandfragment.MainActivity">
+
+    <item
+        android:id="@+id/icon"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@mipmap/xxqg"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@mipmap/search"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/score"
+        android:orderInCategory="100"
+        android:title="积分"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/own"
+        android:orderInCategory="100"
+        android:title="我的"
+        app:showAsAction="always">
+    </item>
+
+
+</menu>

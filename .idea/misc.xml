@@ -1,0 +1,17 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Desktop/abc/AndroidTermWork/app/src/main/res/layout/activity_4.xml" value="0.3333333333333333" />
+        <entry key="..\:/Desktop/abc/AndroidTermWork/app/src/main/res/layout/activity_5.xml" value="0.27236580516898606" />
+        <entry key="..\:/androidStudio/AndroidTermWork/app/src/main/res/layout/activity_web_view.xml" value="0.21875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

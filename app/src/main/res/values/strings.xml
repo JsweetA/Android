@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">安卓期末大作页—学习强国</string>
+    <string name="title_activity_main">学习强国主页</string>
+    <string name="title_home">强国通</string>
+    <string name="title_dashboard">学习</string>
+    <string name="title_notifications">电视台</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <ImageView
+            android:id="@+id/tvImgCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_loading" />
+
+        <TextView
+            android:id="@+id/tvTimeLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/time_length_border"
+            android:paddingStart="2.5dp"
+            android:paddingEnd="2.5dp"
+            android:text="09:09"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="习近平出席中华人民共和国恢复联合国合法席位50周年纪念会议并发表重要讲话"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tvAuthorDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="中国广播电视总台 2021-10-25"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="#efefef"
+        android:layout_below="@id/tvAuthorDate"
+        android:contentDescription="分割线" />
+</LinearLayout>
