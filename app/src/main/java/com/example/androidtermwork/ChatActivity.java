@@ -71,8 +71,10 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
     private void initMsg() {
+        // 对面
         Msg msg1 = new Msg("全国党史知识竞赛总决赛",Msg.RECEIVED);
         msgList.add(msg1);
+        // 我
         Msg msg2 = new Msg("收到",Msg.SENT);
         msgList.add(msg2);
         Msg msg3 = new Msg("关注进博会，游世界展馆，看全球展品",Msg.RECEIVED);
